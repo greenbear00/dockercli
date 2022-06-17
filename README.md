@@ -6,6 +6,8 @@
 - ls : 현재 docker container를 보여줌
 - exec : 지정한 cname(docker container name과 일치한 container)에 cmd(명령어) 를 수행함
 
+개발은 dockerSDK와 python client를 사용하여 Command line application
+
 ## 설치
 설치하는 방법은 아래와 같습니다.
 
