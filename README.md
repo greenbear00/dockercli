@@ -2,13 +2,15 @@
 
 다중 docker container에 동시 명령어를 수행할 수 있는 cli command
 
-## 설치방법
-
 사용 가능한 명령어
 - ls : 현재 docker container를 보여줌
 - exec : 지정한 cname(docker container name과 일치한 container)에 cmd(명령어) 를 수행함
 
-설치
+개발은 dockerSDK와 python client를 사용하여 Command line application
+
+## 설치
+설치하는 방법은 아래와 같습니다.
+
 ```
 # 먼저 pip update
 python3 -m pip install --upgrade pip
