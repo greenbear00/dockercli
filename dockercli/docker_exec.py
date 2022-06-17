@@ -18,7 +18,7 @@ def docker_exec(client:DockerClient, contain_container_name:str, cmd:str, user:s
 	# print(f"... contain_container_name: {contain_container_name}")
 	# print(f"... cmd : {cmd}")
 	for container in client.containers.list(all=True):
-		if container.status == 'running' and container.name.find(contain_container_name) > 0:
+		if container.status == 'running' and container.name.find(contain_container_name) >= 0:
 			print(f"[{container.name}] {container.status}")
 			if user:
 				print(f'\t-user: {user}')
